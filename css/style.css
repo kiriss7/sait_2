@@ -8,26 +8,26 @@
 
 
 .container {
-    width: 940px;
+    max-width: 940px;
     margin: 0 auto;
-    height: inherit;
     font-family: 'Open Sans', sans-serif;
+    width: 100%;
 
 }
 
 .header {
     display: block;
-    width: 1440px;
-    height: 768px;
     background-image: url(img/bg.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: auto;
     margin: 0 auto;
     text-align: center;
     width: 100%;
+    max-width: 1440px;
+    height: 768px;
 }
 
-.logo_header {}
 
 .logo_white_header {
     width: 101px;
@@ -63,15 +63,12 @@
     margin-top: 219px;
 }
 
-.nabar {}
 
 .navbar_papa {
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
 }
-
-.menu {}
 
 .logo_navbar {
     width: 79px;
@@ -83,7 +80,9 @@
     list-style: none;
     gap: 30px;
 }
-
+.navbar{
+    width: inherit;
+}
 .words_menu {
 
     font-family: "OpenSans", sans-serif;
@@ -98,4 +97,23 @@
 .words_menu:hover{
     color: #00a4e5;
     cursor: pointer ;
+}
+@media screen and (max-width: 540px) {
+    .navbar_papa{
+        display: inline;
+        text-align: center;
+    }
+    .words_menu_papa{
+        display: inline;
+    }
+    .words_menu{
+        padding:7px;
+    }
+    .logo_navbar{
+        margin-top: 15px;
+
+    }
+    .scrol_header{
+        margin-top: 100px;
+    }
 }
