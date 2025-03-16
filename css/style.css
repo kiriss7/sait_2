@@ -44,7 +44,7 @@
     color: #fff;
     font-family: 'Bebas Neue', sans-serif;
     text-transform: uppercase;
-    margin: 294px 0 0 14px;
+    margin: 300px 0 -5px 15px;
 }
 
 .text_header {
@@ -80,9 +80,11 @@
     list-style: none;
     gap: 30px;
 }
-.navbar{
+
+.navbar {
     width: inherit;
 }
+
 .words_menu {
 
     font-family: "OpenSans", sans-serif;
@@ -91,29 +93,133 @@
     letter-spacing: 0.09em;
     color: #48555b;
 }
-.words_menu_papa :nth-last-child(4){
-    padding-left: 21px;
-}
-.words_menu:hover{
+
+.words_menu:hover {
     color: #00a4e5;
-    cursor: pointer ;
+    cursor: pointer;
+}
+
+
+
+
+
+.title_about {
+    padding: 74px 0 10px 0;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.13em;
+    text-align: center;
+    color: #48555b;
+}
+
+.line_blue_about {
+    width: 50px;
+    height: 2px;
+    background-color: rgba(0, 164, 229, 1);
+    margin: 0 auto;
+}
+
+.about_text_foto_papa {
+    display: flex;
+    margin-top: 54px;
+
+}
+
+.text_about {
+    max-width: 403px;
+    margin-right: 80px ;
+}
+
+.h4_about {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    color: #48555b;
+}
+.h4_about_span{
+    color: rgba(22, 172, 232, 1);
+}
+
+.p_about {
+
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 177%;
+    letter-spacing: 0.01em;
+    color: #48555b;
+    padding-top: 29px;
+}
+
+.foto_about_papa {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.foto_about {
+    width: 140px;
+    height: 224px;
+    text-transform: uppercase;
+    padding: 15px;;
+font-weight: 800;
+font-size: 24px;
+line-height: 121%;
+letter-spacing: 0.01em;
+color: #fff;
+}
+
+.about1 {
+    background-image: url(img/Bitmap1.png);
+}
+
+.about2 {
+    background-image: url(img/Bitmap2.png);
+}
+
+.about3 {
+    background-image: url(img/Bitmap3.png);
+}
+@media screen and (max-width:950px) {
+    .about_text_foto_papa{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text_about{
+        margin-right: 0;
+    }
+    .foto_about_papa{
+        margin-top: 30px;
+    }
+    .title_text_header{
+        margin-top: 200px;
+    }
+    
 }
 @media screen and (max-width: 540px) {
-    .navbar_papa{
+    .navbar_papa {
         display: inline;
         text-align: center;
     }
-    .words_menu_papa{
+
+    .words_menu_papa {
         display: inline;
     }
-    .words_menu{
-        padding:7px;
+
+    .words_menu {
+        padding: 7px;
     }
-    .logo_navbar{
+
+    .logo_navbar {
         margin-top: 15px;
 
     }
-    .scrol_header{
+
+    .scrol_header {
         margin-top: 100px;
+    }
+    .foto_about_papa{
+        flex-direction: column;
     }
 }
